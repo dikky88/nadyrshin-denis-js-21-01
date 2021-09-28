@@ -14,12 +14,14 @@
 .menu{
     width: 250px;
     background: #f2f2f2;
+    float: left;
 }
 
 .content{
     width: 730px;
     background: #fff;
     color: #000;
+    float: left;
 }
 
 .footer{
@@ -27,3 +29,5 @@
     background: #f2f2f2;
     color: #97acc5;
 }
+
+.clear{clear: both;}
