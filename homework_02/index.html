@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Второе дз</title>
+    <link rel="stylesheet" type="text/css" href="style.css" id="theme">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__title">
+                Интернет магазин "Не только красивое"
+            </div>
+        </header>
+
+        <sidebar class="sidebar">
+            <div class="menu-block">
+                <h3 class="menu-block__title">Морская рыба</h3>
+
+                <div class="menu-block__item">
+                    <input type="checkbox" id="shark" name="shark">
+                    <label class="menu-block__label" for="shark">Акула</label>
+                </div>
+
+                <div class="menu-block__item">
+                    <input type="checkbox" id="perch" name="perch">
+                    <label class="menu-block__label" for="perch">Окунь</label>
+                </div>
+
+                <div class="menu-block__item">
+                    <input type="checkbox" id="halibut" name="halibut">
+                    <label class="menu-block__label" for="halibut">Палтус</label>
+                </div>
+
+                <div class="menu-block__item">
+                    <input type="checkbox" id="codfish" name="codfish">
+                    <label class="menu-block__label" for="codfish">Треска</label>
+                </div>
+            </div>
+
+            <div class="menu-block">
+                <h3 class="menu-block__title">Пресноводная рыба</h3>
+
+                <div class="menu-block__item">
+                    <input type="checkbox" id="white-eyefish" name="white-eyedfish">
+                    <label class="menu-block__label" for="white-eyedfish">Белоглазка</label>
+                </div>
+
+                <div class="menu-block__item">
+                    <input type="checkbox" id="sturgeon" name="sturgeon">
+                    <label class="menu-block__label" for="sturgeon">Осётр</label>
+                </div>
+
+                <div class="menu-block__item">
+                    <input type="checkbox" id="river-eel" name="river-eel">
+                    <label class="menu-block__label" for="river-eel">Речной угорь</label>
+                </div>
+
+                <div class="menu-block__item">
+                    <input type="checkbox" id="burbotfish" name="burbotfish">
+                    <label class="menu-block__label" for="burbotfish">Налим</label>
+                </div>
+            </div>
+
+            <div class="sidebar-elem">
+                <button class="sidebar-elem__button" id="switchMode">День/Ночь</button>
+            </div>
+        </sidebar>
+
+        <main class="main">
+            <h1 class="main-content__title">Рыбы на любой вкус</h1>
+            <p class="main-content__subtitle">Мы продаем рыбов, а не только показываем!</p>
+
+            <section class="main-block">
+                <div class="main-block__container">
+                    <div class="main-block__item">
+                        <a class="main-block__link" href="#">Замороженные рыбы</a>
+                        <p class="main-block__text">Мы заморозили рыбов для вас</p>
+                    </div>
+
+                    <div class="main-block__item">
+                        <a class="main-block__link" href="#">Живые рыбы</a>
+                        <p class="main-block__text">На кухню или на разведение</p>
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="main-box__desc">Популярные</h2>
+
+            <section class="main-box">
+                <div class="main-box__container">
+                    <div class="main-box__item">
+                        <div class="main-box__img"></div>
+                        <div class="main-box__text">
+                            <a class="main-box__link" href="#">Палтус</a>
+                            <button class="main-box__button">Купить</button>
+                        </div>
+                    </div>
+
+                    <div class="main-box__item">
+                        <div class="main-box__img"></div>
+                        <div class="main-box__text">
+                            <a class="main-box__link" href="#">Сёмга</a>
+                            <button class="main-box__button">Купить</button>
+                        </div>
+                    </div>
+
+                    <div class="main-box__item">
+                        <div class="main-box__img"></div>
+                        <div class="main-box__text">
+                            <a class="main-box__link" href="#">Сом</a>
+                            <button class="main-box__button">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-box__container">
+                    <div class="main-box__item">
+                        <div class="main-box__img"></div>
+                        <div class="main-box__text">
+                            <a class="main-box__link" href="#">Мойва</a>
+                            <button class="main-box__button">Купить</button>
+                        </div>
+                    </div>
+
+                    <div class="main-box__item">
+                        <div class="main-box__img"></div>
+                        <div class="main-box__text">
+                            <a class="main-box__link" href="#">Сельдь</a>
+                            <button class="main-box__button">Купить</button>
+                        </div>
+                    </div>
+
+                    <div class="main-box__item">
+                        <div class="main-box__img"></div>
+                        <div class="main-box__text">
+                            <a class="main-box__link" href="#">Тунец</a>
+                            <button class="main-box__button">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__contacts">Контакты</div>
+            <div class="footer__copyright">© 2021 ИП Рыбов О.А.</div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
