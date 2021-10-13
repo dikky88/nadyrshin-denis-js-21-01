@@ -72,6 +72,11 @@
     padding: 5px 10px;
     width: 45%;
     color: gray;
+    transition-duration: 2s;
+}
+
+.main-block__item:hover {
+    background-color: #6cc973;
 }
 
 .main-box__desc {
@@ -89,6 +94,11 @@
     background-color: #f2f2f2;
     width: 30%;
     margin-bottom: 10px;
+    transition-duration: 2s;
+}
+
+.main-box__item:hover {
+    background-color: #6cc973;
 }
 
 .main-box__img {
