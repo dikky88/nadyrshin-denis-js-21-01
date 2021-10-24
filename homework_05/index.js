@@ -108,3 +108,23 @@ function group(arr) {
 }
 
 console.log(group([1, "str", 3, {key: 'value'}, "343", { obj: { key: 'value' }}, undefined, null, function() {}]))
+
+//8. Функция принимает массив чисел и два числовых значения, вернуть новый массив, содержащий элементы первого массива,
+//значение которых попадает под диапазон переданных в функцию чисел (второе переданное число может быть больше первого)
+// [10, 20, 30, 35, 36, 40] 20, 35 -> [ 20, 30, 35]
+// [10, 20, 30, 35, 36, 40] 35, 20 -> [ 20, 30, 35]
+
+function range(arr, a, b) {
+    const result = [];
+
+    for(const value of arr) {
+        if((a <= value && value <= b) || (b <= value && value <= a)) {
+            result.push(value)
+        }
+    }
+
+    return result;
+}
+
+console.log(range([10, 20, 30, 35, 36, 40], 20, 35))
+console.log(range([10, 20, 30, 35, 36, 40], 35, 20 ))
