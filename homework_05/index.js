@@ -39,3 +39,17 @@ function objSum() {
 }
 
 objSum()
+
+//5. На вход поступает массив с числами, вывести среднее арифметическое элементов массива.
+function average() {
+    const arr = [12, 16, 20];
+
+    let sum = 0;
+    arr.forEach(function (v,i,a){a[i] = sum += v;})
+
+    const middle = sum / arr.length;
+
+    console.log(middle)
+}
+
+average();
