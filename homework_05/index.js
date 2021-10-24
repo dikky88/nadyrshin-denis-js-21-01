@@ -160,3 +160,28 @@ const obj = {
 }
 
 obj.log()
+
+//11. Создать функцию-конструктор для объекта, содержащего методы setProp (установить значение свойства),
+//метод принимает ключь (строка), значение (произвольное) и объект со свойствами writable, configurable, enumerable
+//(разрешение перезаписи свойства, разрешение перечисления свойства и разрешение удаления свойства).
+//Если какое-то из свойств в объекте отсутствует, действие должно быть разрешено
+
+function MyObject() {
+    this.setProp = function (key, value, options) {
+        Object.defineProperty(this, key, {
+            value: value,
+            writable: options.writable ?? true,
+            enumerable: options.enumerable ?? true,
+            configurable: options.configurable ?? true,
+        })
+    }
+}
+
+const myObj1 = new MyObject();
+myObj1.setProp('value', 0, { writable: false, enumerable: false, configurable: true });
+console.log(myObj1)
+
+myObj1.setProp('value', 0, { writable: true })
+myObj1.value = 'hello';
+
+console.log(myObj1)
