@@ -24,3 +24,18 @@ function map() {
 }
 
 map()
+
+//4 На вход поступает объект, вывести сумму числовых свойств объекта.
+function objSum() {
+    const obj = {x: 1, y: 2, z: 3, a: undefined, b: 'hell0' };
+
+    let sum = 0;
+    for(let v of Object.values(obj)) {
+        if(!isNaN(v))
+            sum += v;
+    }
+
+    console.log(sum)
+}
+
+objSum()
