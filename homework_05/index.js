@@ -86,3 +86,25 @@ calc1.add(5);
 calc1.subtract(2);
 
 console.log(calc1.value);
+
+//7. Функция принимает смешанный массив (содержащий значения чисел, строк и объектов), вернуть объект с полями numbers,
+//strings и objects, содержащими массив со значениями, соответствующими названию поля.
+
+function group(arr) {
+    const obj = { numbers: [], strings: [], objects: [] };
+
+    for (const value of arr) {
+        if (typeof value === 'string') {
+            obj.strings.push(value)
+        } else if (typeof value === 'number') {
+            obj.numbers.push(value)
+        } else if (typeof value === 'object' && value !== null) {
+            obj.objects.push(value)
+        }
+
+    }
+
+    return obj;
+}
+
+console.log(group([1, "str", 3, {key: 'value'}, "343", { obj: { key: 'value' }}, undefined, null, function() {}]))
