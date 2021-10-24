@@ -53,3 +53,36 @@ function average() {
 }
 
 average();
+
+//6. Создать функцию-конструктор для объекта "калькулятор", объект должен иметь поле, хранящее текущее значение и методы сложения,
+// вычитания, умножения и деления, принимающие число и манипулирующий свойством значения в соответствии с назначением метода, а так же функцию,
+// сбрасывающую значение в ноль.
+
+function Calculator() {
+    this.value = 0;
+    this.add = function(value) {
+        this.value += value;
+    }
+
+    this.subtract = function(value) {
+        this.value -= value;
+    }
+
+    this.multiply = function(value) {
+        this.value *= value;
+    }
+
+    this.divide = function(value) {
+        this.value /= value;
+    }
+
+    this.clear = function() {
+        this.value = 0;
+    }
+}
+
+let calc1 = new Calculator();
+calc1.add(5);
+calc1.subtract(2);
+
+console.log(calc1.value);
