@@ -128,3 +128,13 @@ function range(arr, a, b) {
 
 console.log(range([10, 20, 30, 35, 36, 40], 20, 35))
 console.log(range([10, 20, 30, 35, 36, 40], 35, 20 ))
+
+//9. Функция принимает две строки. Вывести true, если строки являются анаграммами, в противном случае false
+
+function anagram(str1, str2) {
+    return str1.split('').sort().join('') === str2.split('').sort().join('')
+}
+
+console.log(anagram('нос', 'сон'))
+console.log(anagram('встать', 'сесть'))
+console.log(anagram('баян', 'баня'))
