@@ -138,3 +138,25 @@ function anagram(str1, str2) {
 console.log(anagram('нос', 'сон'))
 console.log(anagram('встать', 'сесть'))
 console.log(anagram('баян', 'баня'))
+
+//10. Создать объект, выводящий в консоль все ключи и значения объекта в формате "ключ: значение" через запятую
+//(считать, что значением ключа объекта не может быть объектом или массивом, содержащими объекты)
+//сама функция в консоль выводиться не должна.
+
+const obj = {
+    key: 'value',
+    key1: undefined,
+    key2: 2,
+    log: function () {
+        let sum = '';
+        for (let key in this) {
+            if (key !== 'log')
+                sum += `${key}: ${this[key]}, `;
+        }
+        console.log(sum.slice(0, -2))
+    },
+    key3: null,
+    key4: 'another value'
+}
+
+obj.log()
